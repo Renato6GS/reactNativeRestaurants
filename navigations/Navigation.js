@@ -11,12 +11,13 @@ import TopRestaurantsStack from './TopRestaurantsStack';
 import SearchStack from './SearchStack';
 import FavoritesStack from './FavoritesStack';
 
-
+// Tab inferior para navegar
 const Tab = createBottomTabNavigator();
 
 export default function Navigation() {
     const screenOptions = (route, color) => {
         let iconName;
+        // Es el switch va los "names" de cada screen
         switch(route.name){
             case "restaurants":
                 iconName = "compass-outline"
@@ -47,7 +48,7 @@ export default function Navigation() {
                 color={color}
             />
         )
-        }
+    }
     
 
    return (
