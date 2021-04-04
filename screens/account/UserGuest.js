@@ -22,6 +22,7 @@ export default function UserGuest() {
          </Text>
 
          {/* Sería bueno que cuando el usuario de click al botón, cambie el texto a un circulo de carga */}
+         {/* El .navigate("login") nos permite crear ese efecto como una pantalla encima de la otra */}
          <Button 
             title="Ver perfil"
             buttonStyle={styles.button}
